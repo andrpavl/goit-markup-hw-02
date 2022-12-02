@@ -1,10 +1,21 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #E5E5E5;
-    font-style: normal;
+:root {
+    --dark-theme: #2E2F42;
+    --standart-light: #FFFFFF;
+    --main-bgc: #E5E5E5;
+    --staff-bgc: #F4F4FD;
+    --blue-theme: #4D5AE5;
+    --dark-main: #434455;
+    --text: #E7E9FC
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-main);
+    font-style: normal;
+}
+ul {
+    list-style: none;
+}
 /* header styles */
 
 .logo {
@@ -16,34 +27,42 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: var(--dark-theme);
     text-decoration: none;
+    text-transform: uppercase;
     }
 .logo-half {
-    color: #4D5AE5;;
+    color: var(--blue-theme);;
 }
 .list-link { 
     font-weight: 600;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--dark-theme);
     text-decoration: none;
+}
+.list-link:hover {
+color: var(--blue-theme);
 }
 .contact-link {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--dark-main);
     text-decoration: none;
 
 }
 .contact-link:hover, .contact-link:focus {
-    color: #4D5AE5;
+    color: var(--blue-theme);
 }
 
 /* hero styles */
+
+.hero {
+    background-color: var(--dark-theme)
+}
 
 .hero-name {
     font-family: 'Roboto';
@@ -52,20 +71,21 @@ body {
     line-height: calc(60/56);
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF; 
+    color: var(--standart-light); 
 }
 .hero-button {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-    color: #E7E9FC;
-    background-color: #4D5AE5;
+    color: var(--standart-light);
+    background-color: var(--blue-theme);
     cursor: pointer
 }
 
 
 /* skills style */
+
 
 .list-name {
     width: 264px;
@@ -74,14 +94,14 @@ body {
     font-size: 20px;
     line-height: calc(24/20);
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--dark-theme);
 }
 .list-text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--dark-main);
 }
 
  /* services styles */
@@ -93,10 +113,14 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--dark-theme);
 }
 
 /* staff styles */
+
+.team {
+    background-color: var(--staff-bgc);
+}
 
 .staff-name {
     font-weight: 600;
@@ -104,7 +128,7 @@ body {
     line-height: calc(24/20);
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--dark-theme);
 }
 
 .staff-position {
@@ -113,17 +137,26 @@ body {
     line-height: calc(24/16);
     text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--dark-main);
+}
+.staff-card {
+background-color: var(--standart-light);
 }
 
 /* footer styles */
  
+footer {
+    background-color: var(--dark-theme);
+}
 .footer-text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--text);
+}
+.footer-title {
+    color: var(--staff-bgc);
 }
  
 /* portfolio styles */
@@ -136,12 +169,25 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--blue-theme);
     cursor: pointer;
 
 }
 .filter-btn:hover, .filter-btn:active {
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--standart-light);
+    background-color: var(--blue-theme);
     ;
+}
+
+.all-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(24/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--standart-light);
+    background-color: var(--blue-theme);
+    cursor: pointer;
 }
