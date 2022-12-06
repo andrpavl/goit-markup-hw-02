@@ -5,16 +5,15 @@
     --staff-bgc: #F4F4FD;
     --blue-theme: #4D5AE5;
     --dark-main: #434455;
-    --text: #E7E9FC
+    --text-color: #E7E9FC
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--dark-main);
-    font-style: normal;
 }
-ul {
-    list-style: none;
+.list {
+    list-style: none
 }
 /* header styles */
 
@@ -22,7 +21,7 @@ ul {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(24/18);
+    line-height: 1.33;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
@@ -37,10 +36,11 @@ ul {
 .list-link { 
     font-weight: 600;
     font-size: 16px;
-    line-height: calc(24/16);
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-theme);
     text-decoration: none;
+
 }
 .list-link:hover {
 color: var(--blue-theme);
@@ -48,7 +48,7 @@ color: var(--blue-theme);
 .contact-link {
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(24/16);
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-main);
     text-decoration: none;
@@ -65,10 +65,9 @@ color: var(--blue-theme);
 }
 
 .hero-name {
-    font-family: 'Roboto';
-    font-weight: 600;
+        font-weight: 600;
     font-size: 56px;
-    line-height: calc(60/56);
+    line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--standart-light); 
@@ -76,7 +75,7 @@ color: var(--blue-theme);
 .hero-button {
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(24/16);
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--standart-light);
     background-color: var(--blue-theme);
@@ -88,18 +87,16 @@ color: var(--blue-theme);
 
 
 .list-name {
-    width: 264px;
-    height: 24px;
     font-weight: 600;
     font-size: 20px;
-    line-height: calc(24/20);
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-theme);
 }
 .list-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(24/16);
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-main);
 }
@@ -109,7 +106,7 @@ color: var(--blue-theme);
  .services-name, .staff {
     font-weight: 600;
     font-size: 36px;
-    line-height: calc(40/36);
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -125,7 +122,7 @@ color: var(--blue-theme);
 .staff-name {
     font-weight: 600;
     font-size: 20px;
-    line-height: calc(24/20);
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-theme);
@@ -134,7 +131,7 @@ color: var(--blue-theme);
 .staff-position {
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(24/16);
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-main);
@@ -151,9 +148,9 @@ footer {
 .footer-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(24/16);
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text);
+    color: var(--text-color);
 }
 .footer-title {
     color: var(--staff-bgc);
@@ -164,8 +161,7 @@ footer {
 .filter-btn {
     font-weight: 600;
     font-size: 16px;
-    line-height: calc(24/16);
-    display: flex;
+    line-height: 1.5;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
@@ -182,8 +178,7 @@ footer {
 .all-btn {
     font-weight: 600;
     font-size: 16px;
-    line-height: calc(24/16);
-    display: flex;
+    line-height: 1.5;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
